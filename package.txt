@@ -1,0 +1,64 @@
+packageJSON.txt:
+
+package json file manages dependencies and contains scripts which initial build
+format of package json file which contains :
+name
+version
+descriptions
+main
+scripts
+test
+author
+license
+
+
+command : npm init
+.....................................................................................
+
+set default pockage json.txt
+
+change default setting in package.json
+commands:
+for setting defaults:
+npm config set init-author-name "YourName"
+npm set init-license "YourLicense"
+
+for getting defaults:
+npm config get init-author-name
+npm get init-license
+
+for creating package.json with defaults:
+npm init --yes
+.......................................................................................
+
+Uninstall global package:
+
+cmd:
+npm uninstall moment -g --> uninstalls moment modules globally
+
+alias of uninstall :
+npm remove moment -g
+npm rm moment -g
+npm un moment -g
+....................................................................................
+
+Uninstall local package:
+
+cmd: 
+npm uninstall moment --save -->removes dependencies from package.json
+npm uninstall moment --save-dev  -->removes dev dependencies from package.json
+....................................................................................
+
+update package:
+
+npm update lodash --save  ---->updates lodash to latest version 
+
+npm update --dev --save-dev   -----> updates dev dpendencies to latest version
+
+npm update ----> updates all dependencies to latest version
+
+npm update -g -----> updates globally packages
+
+npm install npm@latest -g ---> installs npm to latest version globally
+.....................................................................................
+

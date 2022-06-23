@@ -1,0 +1,78 @@
+what is node.js?
+=>  * A platform which allows us to run js on a computer/server
+    * Read, delete and update files
+    * Easily communication with a database
+.................................................................................
+why node.js is popular?
+=>  * its uses js
+    * it is very fast( runs on the v8 machine and uses non-blocking code)
+    * Huge ecosystem of open source packages(npm)
+    * Great for real-time services(like chats)
+...................................................................................
+Install Node.js:
+
+install node.js
+check version --> node -v
+
+run js file: node <filename>.js/<filename>
+...........................................................................
+
+V8 engine:
+
+* V8 engine is google's opensource high-performance js engine, written in c++ and used in google chrome
+* V8 can run standalone, or can be embedded into any c++ application
+* V8 engine converts JS code into machine code
+
+JavaScript engine:
+* computer do not understand JS code
+* A JS engine takes JS and converts it into something which machine can understand
+          
+     JavaScript to Machine Code:
+ - JS
+ - C++
+ - Assembly Language
+ - Machine code     
+
+* Node.js is written in c++
+* at the heart of node.js is the v8 engine
+* the v8 engine converts js into machine code
+
+                Node.js with V8:
+      -> JS     
+      -> c++  -  Node.js    -   V8
+      -> Machine Code
+
+* when js code is run through node.js, the code is passed to v8 and v8 converts the c++ code to machine code
+
+.........................................................................................................
+
+Global Object:
+
+* Global objects are the objects that are available in all modules
+* they are built-in objects that are part of teh JavaScripts and can be used direct;y in the application without importing any particular module
+
+* some Global Objects are:
+    * console
+    * setInterval
+    * setTimeout
+    * clearInterval
+    * __dirname
+    * __filename
+
+* eg: 
+    
+    * console.log() --> used to print message
+    * setInterval() --> sets callback function at intervals
+    * setTimeout() --> run callback function after mentioned delay in ms
+    * console.log(__dirname) --> prints directory address
+    * console.log(__filename) --> prints directory with current filename
+...........................................................................................................
+
+Function expression:
+
+Function Expression is the FUNCTION keyword which is used to define a function inside an Expression.
+
+var sayBye = function(){
+    console.log('Byeee')
+}
+* function without any name is called anonymous function 

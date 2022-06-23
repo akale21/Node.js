@@ -1,0 +1,68 @@
+Module:
+* module are blocks of encapsulated code that communication with external application basis of their related functionality
+* Modules can be single file or multiple files/folders
+
+require():
+* it built-in function that is used to insert modules exist in seperate file
+* the basic functionality of 'require()' is it reads js file, executes the file and proceeds to return the exports obj 
+
+package:
+* a package is a file or directory that is described by a package.json file
+* a package must contain package.json file in order to published to the npm registry
+....................................................................................................
+
+exporting modules have many patterns. they are:
+*   module.exports.counter=counter
+    module.exports.adder=adder
+    module.exports.pi
+
+*   module.exports.counter = function(arr)
+    module.exports.adder=function(arr)
+    module.exports.pi = 3.142
+
+*   module.exports = {
+    counter:counter,
+    adder:adder,
+    pi:pi
+   }
+
+module.export means making particule module available to other files
+
+Accessing objects from other module:
+*   modPat_1.counter(['shaun','crystal','ryu'])
+    modPat_1.adder(5,6)
+    modPat_1.adder(modPat_1.pi,6)
+
+*   filename.varname
+...........................................................................................
+
+event emitter :
+* it is used to handle events
+* to initialize:
+    var eventemitter = new EventEmiiter()
+* some methods 'on' and 'emit'
+    myEmitter.on('someEvent', function(mssg){
+    console.log(mssg)
+    })
+
+    myEmitter.emit('someEvent','the event was emitted')
+
+* emit() is used to trigger an event
+* on() is used to add callback function that is going to be executed when the event is triggered
+...................................................................................................
+
+Read & Write:
+
+fs module:
+* it is built-in module called file system
+* All file system operations can have synchronous and asynchronous forms depending upon user requirements
+* One peculiar thing about the fs module is that all the methods are asynchronous by default, but they can also work synchronously by appending Sync
+    eg: readFile() - asynchronous
+        readFileSync() - synchronous
+        writeFile() - asynchronous
+        writeFileSync() - synchronous
+
+readFileSync() - reads the file completely and move to next code, which is blocking code i,e interrupts the execution of further code
+readFile() reads the file in the end without blocking the further code execution i,e this is non-blocking code
+.........................................................................................................
+

@@ -1,7 +1,6 @@
 
 
-const fs = require('fs');//asynhronous version
-
+const fs = require('fs');
 const data = "This is the new content of the file.";
 
 fs.writeFile('writeme.txt', data, (err) => {

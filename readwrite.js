@@ -5,14 +5,14 @@
 
 // const fs = require('fs');//asynhronous version
 
-// fs.readFile('read.txt', (err, data) => {
+// fs.readFile('readme.txt', (err, data) => {
 //     if(err) {
 //         throw err;
 //     }
 //     console.log(data.toString());
 // });
 
-// fs.readFile('read.txt','utf8',function(err,data){
+// fs.readFile('readme.txt','utf8',function(err,data){
 //     fs.writeFileSync('writeme.txt',data);
 // });
 
